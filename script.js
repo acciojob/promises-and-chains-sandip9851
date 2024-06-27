@@ -1,6 +1,7 @@
 document.getElementById("btn").addEventListener("click",alertDisplay);
 
-function alertDisplay() {
+function alertDisplay(event) {
+	  event.preventDefault();
 	let age = document.getElementById("age").value;
 	let name = document.getElementById("name").value;
 	if(age === "" || name === ""){
